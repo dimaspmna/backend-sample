@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.send("Selamat database mysql terkoneksi!");
 });
 
-app.use("/api/users", usersRouter);
+app.use("/users", usersRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
